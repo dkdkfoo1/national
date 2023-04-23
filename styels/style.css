@@ -1,0 +1,110 @@
+/* 1120px */
+
+
+/* 후버기능 */
+header .h_width nav a:hover {
+    animation: round 1s ease-in-out; 
+}
+header .h_width nav a:hover h1 {
+    color: tomato;
+}
+@keyframes round {
+    0% {transform: rotate(0);}
+    30% {transform: rotate(90deg);}
+    50% {transform: rotate(30deg);}
+    70% {transform: rotate(60deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/*  */
+
+body {background-color:#000;}
+header {padding-top: 50px;}
+header .h_width {
+    background: #000;
+    width:1120px; margin: 0px auto; display: flex; flex-flow: row; justify-content: space-between; align-items: center;
+}
+header .h_width a {width: 170px;}
+header .h_width a img {width: 100%;}
+header .h_width nav {
+    display: flex;
+}
+header .h_width nav h1 {
+    text-transform: uppercase;
+    margin-left: 50px;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: 'Asap', sans-serif;
+    /* font-style: italic;s */
+    font-weight: 900;
+}
+
+/* ============================헤더완성 */
+main {width:1120px; margin: 0px auto;} 
+main .container {}
+main .container h2 {
+    color:#fff; font-size: 2rem; margin: 50px 0; text-transform: capitalize; 
+    font-family: 'Asap', sans-serif; font-weight: 700;
+    border-bottom: solid 3px #fff; display: inline-block;  
+    padding-bottom: 20px;
+}
+/* 첫번째 메인 */
+main .con1 {position: relative;}
+main .con1 h2 {}
+main .con1 p {width: 1120px;}
+main .con1 p img {width: 100%;}
+main .con1 h3 {font-family: 'Gowun Dodum', sans-serif; font-size: 3rem; color:  #fff; position: absolute; top: 50%; left: 10%;}
+main .con1 h3 span {display: block; font-family: 'Gowun Dodum', sans-serif; padding-top: 20px;}
+/* 두번째 메인 */
+main .con2 {}
+main .con2 h2{}
+main .con2 .align{
+    width: 1120px; height: 454px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+main .con2 .align p {background-size: cover; background-position: center;}
+main .con2 .align .p1{background-image: url(../images/d4.jpg); width: 31%; }
+main .con2 .align .p2 {background-image: url(../images/mistery.jpg); width: 31%;}
+main .con2 .align .p3 {background-image: url(../images/d1.jpg); width: 31%;}
+main .con2 .align p span {
+    font-family: 'Gowun Dodum', sans-serif; color:  #fff; text-align: center; padding-top: 50%; display: block; font-size: 1.2rem; line-height: 2;
+    background: rgba(0,0,0,0.6);
+    width: 100%; height: 100%;
+}
+/* 세번째 메인 */
+main .con3 {position: relative;}
+main .con3 h2 {}
+main .con3 .align2 {
+    display: grid;
+    grid-template-areas: 
+    ". p2 p2"
+    "p1 . ."
+    "p1 p3 p4";
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-rows: 350px 350px 350px;
+}
+    main .con3 .align2 .p1 {background-image: url(../images/white_flower.jpg); background-size: cover; background-position: center; grid-area: p1;}
+    main .con3 .align2 .p2 {background-image: url(../images/lake.jpg.jpg); background-size: cover; background-position: center; grid-area: p2;}
+    main .con3 .align2 .p3 {background-image: url(../images/totus.jpg.jpg); background-size: cover; background-position: center; grid-area: p3;}
+    main .con3 .align2 .p4 {background-image: url(../images/mountain.jpg.jpg); background-size: cover; background-position: center; grid-area: p4;}
+
+    main .con3 .h3_1 {position: absolute; top: 20%; left: 0; color: #fff; font-family: 'Gowun Dodum', sans-serif; font-size: 2rem;}
+    main .con3 .h3_1 span {display: block; font-family: 'Gowun Dodum', sans-serif; padding-top: 20px;}
+    main .con3 .h3_2 {position: absolute; top: 50%; right: 0%; color: #fff; font-family: 'Gowun Dodum', sans-serif; font-size: 2rem;}
+    main .con3 .h3_2 span {display: block; font-family: 'Gowun Dodum', sans-serif; padding-top: 20px;}
+/* ============================메인완성 */
+
+footer {background: #000; padding: 50px 0;}
+footer p {margin: 20px 0;}
+footer .footer1 {width:1120px; margin: 0px auto;}
+footer .footer1 .left {display: flex; flex-flow: row;  align-items: center;}
+footer .footer1 .left p {color: #fff; margin-left: 20px;}
+footer .footer1 .left p:first-child {color: #fff; width: 100px;}
+footer .footer1 .left p img {width: 100%;}
+footer .footer1 .right {}
+footer .footer2 {width:1120px; margin: 0px auto;}
+footer .footer2 p {color: #fff;}
+footer .footer3  {width:1120px; margin: 0px auto;}
+footer .footer3 p {color: #fff;}
